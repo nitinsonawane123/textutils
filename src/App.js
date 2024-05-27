@@ -4,6 +4,7 @@ import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
+import StudentForm from './components/StudentForm';
 import {
   BrowserRouter as Router,
   Route,
@@ -58,6 +59,7 @@ function App() {
         <Routes>
         <Route exact path="/about" element={<About mode={mode}/>} />
         <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Try TextUtils - Word Counter, Character Counter, Remove extra spaces" mode={mode} />} />
+        <Route exact path="/student" element={<StudentForm mode={mode}/>} />
        </Routes>
       </div>
       </Router>

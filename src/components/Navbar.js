@@ -32,6 +32,11 @@ export default function Navbar(props) {
                 {props.aboutText}
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" aria-current="page" to="/student">
+                Student
+              </Link>
+            </li>
           </ul>
        {/* <div className="d-flex">
            <div className="bg-primary rounded-circle mx-2" onClick={() =>{props.toggleMode('primary')}} style={{height: '20px', width: '20px', cursor: 'pointer'}}></div>
